@@ -44,7 +44,7 @@ def setup_verifier(bot):
         legit = sum(1 for r in rows if r[0] == 0 and r[1] == 0)
 
         message = f"""
-⚽ **Invite Verification**
+z **Invite Verification**
 
 Inviter: {inviter_name}
 Range Checked: {start+1} → {end}
