@@ -1,10 +1,14 @@
 import discord
 from discord.ext import commands
 import config
+import database   # ← add this
 
 from modules.tracker import setup_tracker
 from modules.verifier import setup_verifier
 from modules.scanner import setup_scanner
+
+# create database + table
+database.setup_database()   # ← add this
 
 intents = discord.Intents.default()
 intents.message_content = True
